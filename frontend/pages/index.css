@@ -1,0 +1,151 @@
+.corpo {
+    background-color: #ffffff;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #61c61a;
+    padding: 10px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #61c61a;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  header {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px #61c61a;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-around {
+    justify-content: space-around;
+  }
+  
+  .start {
+    flex-direction: row;
+    padding: 0px;
+    margin: 5px;
+  }
+  
+  .end {
+    flex-direction: row-reverse;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  
+  .container {
+    width: 66%;
+    margin-top: 30px;;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #61c61a;
+    box-shadow: 5px 5px 10px black;
+  }
+  
+  #img {
+    margin: 20px;
+    max-width: 300px;
+    max-height: 275px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  #conteudo {
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+  }
+
+  #conteudoIndex {
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+  }
+
+  h2 {
+    padding: 20px;
+  }
+  
+  legend {
+    text-align: center;
+  }
+  
+  .rodape {
+    /*justify-content: space-around;
+    display: flex;*/
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 40px #343330;
+    border-radius: 20px;
+    align-items: center;
+  }
+  
+  footer {
+    justify-content: space-around;
+    box-shadow: 8px 8px 40px #343330;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #61c61a;
+  }
+  
+  #input_msg{
+    width: 300px;
+    height: 100px;
+  }
+
+  .tabela{
+    margin: 20px;
+    padding: 60px;
+    border: 2px solid #343330;
+    border-radius: 20px;
+    width: 600px;
+  }
+
+  .tabelaList{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #343330;
+    border-radius: 60px;
+  }
+
+  .dado{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+  }
