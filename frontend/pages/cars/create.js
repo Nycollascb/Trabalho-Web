@@ -10,11 +10,19 @@ export default function createCar() {
     e.preventDefault();
     const value = e.target.value;
 
-    if (e.target.modelo === "modelo") {
-      setCar({ modelo: value,marca: value, cor: value, ano: car.ano });
+    if (e.target.name === "modelo") {
+      setCar({ modelo: value,marca: car.marca, cor: car.cor, ano: car.ano });
     }
 
-    if (e.target.modelo === "ano") {
+    if (e.target.name === "marca") {
+      setCar({ modelo: car.modelo,marca: value, cor: car.cor, ano: car.ano });
+    }
+
+    if (e.target.name === "cor") {
+      setCar({ modelo: car.modelo, marca: car.marca, cor: value, ano: car.ano });
+    }
+
+    if (e.target.name === "ano") {
       setCar({ modelo: car.modelo, marca: car.marca, cor: car.cor, ano: parseInt(value) });
     }
   }
@@ -103,7 +111,7 @@ export default function createCar() {
         <label class="dado"htmlFor="name">Ano</label>
         <input class="dado"type="number" name="ano"></input>
         </div>
-        <button class="dado"onClick={() => createCar()}>Adicionar carro</button>
+        <button class="dado"onClick={() => createCar()}>Criar carro</button>
       </form>
       </div>
       </section>

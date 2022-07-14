@@ -12,20 +12,24 @@ export default function UpdateCar() {
     e.preventDefault();
     const value = e.target.value;
 
-    if (e.target.modelo === "selectedCar") {
+    if (e.target.name === "selectedCar") {
       setCarId(parseInt(value));
     }
 
-    if (e.target.modelo === "modelo") {
-      setCar({ modelo: value, marca: value, cor: value, ano: user.ano });
+    if (e.target.name === "modelo") {
+      setCar({ modelo: value,marca: car.marca, cor: car.cor, ano: car.ano });
     }
 
-    if (e.target.modelo === "ano") {
-      setCar({
-        modelo: user.modelo,
-        marca: user.marca,
-        cor: user.cor,
-        ano: parseInt(value),
+    if (e.target.name === "marca") {
+      setCar({ modelo: car.modelo,marca: value, cor: car.cor, ano: car.ano });
+    }
+
+    if (e.target.name === "cor") {
+      setCar({ modelo: car.modelo, marca: car.marca, cor: value, ano: car.ano });
+    }
+
+    if (e.target.name === "ano") {
+      setCar({modelo: car.modelo, marca: car.marca,cor: car.cor, ano: parseInt(value),
       });
     }
   }
